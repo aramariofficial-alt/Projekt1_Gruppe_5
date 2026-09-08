@@ -1,0 +1,59 @@
+@startuml
+left to right direction
+
+actor Bruger
+actor Arrangør
+actor Virksomhed
+
+rectangle "Madspildsplatform" {
+
+    usecase "Opret Bruger" as UC1
+    usecase "Log Ind" as UC2
+
+    usecase "Se Madspildsinfo" as UC3
+    usecase "Få Tips til\nat Undgå Madspild" as UC4
+
+    usecase "Registrer Madspild" as UC5
+    usecase "Se Egen Historik" as UC6
+
+    usecase "Se Events" as UC7
+    usecase "Opret Event" as UC8
+    usecase "Tilmeld Event" as UC9
+
+    usecase "Tilbyd Overskudsmad" as UC10
+
+    usecase "Se Om Os" as UC11
+}
+
+Bruger --> UC1
+Bruger --> UC2
+Bruger --> UC3
+Bruger --> UC4
+Bruger --> UC7
+Bruger --> UC9
+Bruger --> UC11
+
+Arrangør --> UC2
+Arrangør --> UC7
+Arrangør --> UC8
+Arrangør --> UC11
+Arrangør --> UC1
+
+Virksomhed --> UC2
+Virksomhed --> UC3
+Virksomhed --> UC1
+Virksomhed --> UC5
+Virksomhed --> UC6
+Virksomhed --> UC7
+Virksomhed --> UC10
+Virksomhed --> UC11
+
+UC5 ..> UC2 : <<include>>
+UC6 ..> UC2 : <<include>>
+UC8 ..> UC2 : <<include>>
+UC9 ..> UC2 : <<include>>
+UC10 ..> UC2 : <<include>>
+
+UC9 ..> UC7 : <<include>>
+
+@enduml
