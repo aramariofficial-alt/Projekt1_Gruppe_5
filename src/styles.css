@@ -175,3 +175,79 @@ footer {
 
 
 /*forside*/
+
+/*om os*/
+
+.statistics2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+@media (min-width: 100px) {
+    .statistics2.reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+.stat-card2 {
+    margin: 30px;
+    padding: 20px;
+    margin-top: 100px;
+    height: auto;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    font-weight: bold;
+    align-content: center;
+    justify-content: center;
+    background-color: #04AA6D;
+    color: white;
+    line-height: 3;
+    border-radius: 100px;
+    border: 2px solid #73AD21;
+    box-shadow: -5px -5px 30px 10px lightblue;
+}
+
+.historie-billede {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.stat-card3{
+    margin: 40px;
+    padding-bottom: 50px;
+    height: auto;
+    width: 800px;
+    text-align: center;
+    font-weight: bold;
+    align-content: center;
+    justify-content: center;
+    background-color: #04AA6D;
+    color: white;
+    line-height: 3;
+    border-radius: 100px;
+    border: 2px solid #73AD21;
+    box-shadow: -5px -5px 30px 10px lightblue;
+}
+.stat-card4{
+    margin: 40px;
+    padding-bottom: 50px;
+    height: auto;
+    width: 600px;
+    text-align: center;
+    font-weight: bold;
+    align-content: center;
+    justify-content: center;
+    background-color: #04AA6D;
+    color: white;
+    line-height: 3;
+    border-radius: 100px;
+    border: 2px solid #73AD21;
+    box-shadow: -5px -5px 30px 10px lightblue;
+}
