@@ -1,14 +1,27 @@
 /*forside*/
-/*border: black 2px solid;*/
-p {
-    font-family: Helvetica, serif;
-}
 
 body a {
     text-decoration: none; /* Fjerner stregen som standard */
 }
 
-body a:hover {
+button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+
+a:hover {
     text-decoration: underline;
 }
 
@@ -16,6 +29,7 @@ body a:hover {
 body {
     padding: 0;
     margin: 0;
+    font-family: Helvetica, serif;
 }
 
 .nav {
@@ -35,7 +49,6 @@ body {
 
 .nav ul a {
     margin: 20px;
-    font-family: Helvetica, serif;
     font-size: 20px;
     color: white;
     font-style: oblique;
@@ -81,7 +94,6 @@ body {
     font-size: 50px;
     padding: 10px;
     color: white;
-    font-family: Helvetica, serif;
     position: absolute;
     transform: translate(65%, 200%);
     background-color: #04AA6D;
@@ -105,7 +117,6 @@ body {
 }
 
 h2 {
-    font-family: Helvetica, serif;
     text-align: center;
 }
 
@@ -149,7 +160,6 @@ h2 {
     margin-top: 150px;
     width: 300px;
     height: 200px;
-    font-family: Helvetica, serif;
     font-size: 20px;
 }
 
@@ -165,7 +175,6 @@ footer {
 }
 
 .practicalinfo {
-    font-family: Helvetica, serif;
     padding-top: 6px;
     font-size: 14px;
     color: white;
@@ -173,8 +182,40 @@ footer {
     line-height: 2;
 }
 
-
 /*forside*/
+
+/*events*/
+.events {
+    display: flex;
+    justify-content: center;
+    line-height: 40px;
+    margin-top: 20px;
+    margin-bottom: 210px;
+
+}
+
+
+.event {
+    padding: 30px;
+    margin: 10px;
+    border: #04AA6D solid 2px;
+}
+
+
+.event button:hover {
+    text-decoration: underline;
+}
+
+/*events*/
+/*tilmeld*/
+#form {
+    display: flex;
+    margin-top: 40px;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 72px;
+}
+/*tilmeld*/
 
 /*om os*/
 
@@ -219,7 +260,8 @@ footer {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.stat-card3{
+
+.stat-card3 {
     margin: 40px;
     padding-bottom: 50px;
     height: auto;
@@ -235,7 +277,8 @@ footer {
     border: 2px solid #73AD21;
     box-shadow: -5px -5px 30px 10px lightblue;
 }
-.stat-card4{
+
+.stat-card4 {
     margin: 40px;
     padding-bottom: 50px;
     height: auto;

@@ -1,0 +1,77 @@
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Forside</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="header">
+    <nav class="nav">
+        <a href="index.html">
+            <img class="logo" src="../img/x.png" alt="Danmark mod Madspild">
+        </a>
+        <ul>
+            <li><a href="index.html">FORSIDE</a></li>
+            <li><a href="viden.html">VIDEN</a></li>
+            <li><a href="undgå-madspild.html">UNDGÅ MADSPILD</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="om-os.html">OM OS</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <article id="form">
+        <form>
+            <label for="name">Navn:</label>
+            <input id="name" name="name" type="text"> <br> <br>
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="text">
+            <br><br>
+
+            <label>Køn:</label>
+            <label>
+                <input type="radio" name="sex" value="male"> Mand
+            </label>
+
+            <label>
+                <input type="radio" name="sex" value="female"> Kvinde
+            </label>
+            <br> <br>
+
+            <label for="usertype">Brugertype:</label>
+            <select id="usertype" name="country">
+                <option value="">Vælg en valgmulighed</option>
+                <option value="forbruger">Forbruger</option>
+                <option value="virksomhed">Virksomhed</option>
+                <option value="organisation">Organisation</option>
+            </select>
+            <br> <br>
+
+            <label for="message">Besked: </label>
+            <br> <br>
+
+            <textarea id="message" name="message" cols="30" rows="10"></textarea>
+            <br> <br>
+
+            <input id="subscribe" name="subscribe" type="checkbox">
+            <label for="subscribe"> Jeg vil gerne modtage nyheder om Danmark Mod Madspild </label>
+            <br> <br>
+            <button class="button">Submit</button>
+        </form>
+    </article>
+</main>
+
+<footer>
+    <article>
+        <ul class="practicalinfo">
+            <li>Adresse: Guldbergsgade 29N, 2200 København</li>
+            <li>TLF: 46 46 00 00</li>
+            <li>Mail: example@example.com</li>
+        </ul>
+    </article>
+</footer>
+</body>
+</html>
