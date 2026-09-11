@@ -1,45 +1,54 @@
-/*forside*/
-/*border: black 2px solid;*/
-p {
-    font-family: Helvetica, serif;
-}
-
+/*forside -----------------*/
 body a {
-    text-decoration: none; /* Fjerner stregen som standard */
+    text-decoration: none; /* Fjerner stregen under link */
 }
 
-body a:hover {
+button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px 32px;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+
+a:hover {
     text-decoration: underline;
 }
 
 
 body {
-    padding: 0;
+    font-family: Helvetica, serif;
     margin: 0;
+    padding: 0;
 }
 
 .nav {
+    background-color: #04AA6D;
     display: flex;
     justify-content: space-between;
-    background-color: #04AA6D;
 }
 
 .logo {
-    width: 100px;
+    bottom: 5px;
     margin-left: 30px;
     margin-top: 15px;
     position: relative;
-    bottom: 5px;
+    width: 100px;
 
 }
 
 .nav ul a {
-    margin: 20px;
-    font-family: Helvetica, serif;
-    font-size: 20px;
     color: white;
+    font-size: 20px;
     font-style: oblique;
     font-weight: bold;
+    margin: 20px;
 }
 
 
@@ -47,8 +56,8 @@ body {
     display: flex;
     list-style: none;
 
-    padding: 0;
     margin-top: 40px;
+    padding: 0;
 }
 
 .hero {
@@ -56,36 +65,35 @@ body {
 }
 
 .hero button { /*LÆS MERE*/
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 300%);
     background-color: #04AA6D;
     border: none;
     color: white;
-    padding: 15px 32px;
-    text-align: center;
+    cursor: pointer;
     display: inline-block;
     font-size: 16px;
-    cursor: pointer;
+    left: 50%;
+    padding: 15px 32px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, 300%);
 }
 
 .hero img {
-    width: 100%;
     height: 60vh;
+    width: 100%;
     /*border: black 2px solid;*/
 }
 
 .hero h1 { /*SAMMEN MOD MADSPILD*/
-    text-align: center;
+    background-color: #04AA6D;
+    color: white;
     font-size: 50px;
     padding: 10px;
-    color: white;
-    font-family: Helvetica, serif;
     position: absolute;
-    transform: translate(65%, 200%);
-    background-color: #04AA6D;
+    text-align: center;
     text-shadow: 2px 2px 4px #000000;
+    transform: translate(65%, 200%);
 
 }
 
@@ -95,8 +103,8 @@ body {
 }
 
 .header .line {
-    position: relative;
     bottom: -20px;
+    position: relative;
 }
 
 .statistics {
@@ -105,29 +113,28 @@ body {
 }
 
 h2 {
-    font-family: Helvetica, serif;
     text-align: center;
 }
 
 .stat-card {
-    margin: 30px;
-    height: 500px;
-    width: 400px;
-    text-align: center;
-    font-weight: bold;
     align-content: center;
-    justify-content: center;
     background-color: #04AA6D;
-    color: white;
-    line-height: 3;
-    border-radius: 100px;
     border: 2px solid #73AD21;
+    border-radius: 100px;
     box-shadow: -5px -5px 30px 10px lightblue;
+    color: white;
+    font-weight: bold;
+    height: 500px;
+    justify-content: center;
+    line-height: 3;
+    margin: 30px;
+    text-align: center;
+    width: 400px;
 }
 
 .stat-card p {
-    padding: 10px;
     font-size: 20px;
+    padding: 10px;
     text-shadow: 2px 2px 4px #000000;
 }
 
@@ -137,20 +144,19 @@ h2 {
 
 
 #animated-img {
+    clip-path: circle(40%);
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+    float: left;
     margin-left: 30px;
     margin-top: 10px;
-    float: left;
-    clip-path: circle(40%);
     shape-outside: circle(45%);
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
 }
 
 .linkbox {
+    font-size: 20px;
+    height: 200px;
     margin-top: 150px;
     width: 300px;
-    height: 200px;
-    font-family: Helvetica, serif;
-    font-size: 20px;
 }
 
 .linkbox ul a {
@@ -160,30 +166,61 @@ h2 {
 
 footer {
     background-color: #04AA6D;
-    width: 100%;
     height: 100px;
+    width: 100%;
 }
 
 .practicalinfo {
-    font-family: Helvetica, serif;
-    padding-top: 6px;
-    font-size: 14px;
     color: white;
-    list-style-type: none;
+    font-size: 14px;
     line-height: 2;
+    list-style-type: none;
+    padding-top: 6px;
+}
+
+/*forside -----------------*/
+
+/*events  -----------------*/
+.events {
+    display: flex;
+    justify-content: center;
+    line-height: 40px;
+    margin-bottom: 210px;
+    margin-top: 20px;
+
 }
 
 
-/*forside*/
+.event {
+    border: #04AA6D solid 2px;
+    margin: 10px;
+    padding: 30px;
+}
+
+
+.event button:hover {
+    text-decoration: underline;
+}
+/*events  -----------------*/
+
+/*tilmeld -----------------*/
+#form {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+    margin-top: 40px;
+}
+/*tilmeld -----------------*/
 
 /*om os*/
 
 .statistics2 {
-    display: flex;
     align-items: center;
-    justify-content: center;
+    display: flex;
     flex-wrap: wrap;
     gap: 60px;
+    justify-content: center;
 }
 
 @media (min-width: 100px) {
@@ -193,61 +230,63 @@ footer {
 }
 
 .stat-card2 {
-    margin: 30px;
-    padding: 20px;
-    margin-top: 100px;
-    height: auto;
-    width: 100%;
-    max-width: 900px;
-    text-align: center;
-    font-weight: bold;
     align-content: center;
-    justify-content: center;
     background-color: #04AA6D;
-    color: white;
-    line-height: 3;
-    border-radius: 100px;
     border: 2px solid #73AD21;
+    border-radius: 100px;
     box-shadow: -5px -5px 30px 10px lightblue;
+    color: white;
+    font-weight: bold;
+    height: auto;
+    justify-content: center;
+    line-height: 3;
+    margin: 30px;
+    margin-top: 100px;
+    max-width: 900px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
 }
 
 .historie-billede {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
     border-radius: 20px;
-    margin-top: 20px;
+    height: auto;
     margin-bottom: 20px;
+    margin-top: 20px;
+    max-width: 600px;
+    width: 100%;
 }
-.stat-card3{
+
+.stat-card3 {
+    align-content: center;
+    background-color: #04AA6D;
+    border: 2px solid #73AD21;
+    border-radius: 100px;
+    box-shadow: -5px -5px 30px 10px lightblue;
+    color: white;
+    font-weight: bold;
+    height: auto;
+    justify-content: center;
+    line-height: 3;
     margin: 40px;
     padding-bottom: 50px;
-    height: auto;
+    text-align: center;
     width: 800px;
-    text-align: center;
-    font-weight: bold;
-    align-content: center;
-    justify-content: center;
-    background-color: #04AA6D;
-    color: white;
-    line-height: 3;
-    border-radius: 100px;
-    border: 2px solid #73AD21;
-    box-shadow: -5px -5px 30px 10px lightblue;
 }
-.stat-card4{
+
+.stat-card4 {
+    align-content: center;
+    background-color: #04AA6D;
+    border: 2px solid #73AD21;
+    border-radius: 100px;
+    box-shadow: -5px -5px 30px 10px lightblue;
+    color: white;
+    font-weight: bold;
+    height: auto;
+    justify-content: center;
+    line-height: 3;
     margin: 40px;
     padding-bottom: 50px;
-    height: auto;
-    width: 600px;
     text-align: center;
-    font-weight: bold;
-    align-content: center;
-    justify-content: center;
-    background-color: #04AA6D;
-    color: white;
-    line-height: 3;
-    border-radius: 100px;
-    border: 2px solid #73AD21;
-    box-shadow: -5px -5px 30px 10px lightblue;
+    width: 600px;
 }
