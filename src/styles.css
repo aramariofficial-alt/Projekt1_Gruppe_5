@@ -229,7 +229,7 @@ footer {
     }
 }
 
-.stat-card2 {
+.stat-card-aboutUs {
     align-content: center;
     background-color: #04AA6D;
     border: 2px solid #73AD21;
@@ -257,7 +257,7 @@ footer {
     width: 100%;
 }
 
-.stat-card3 {
+.stat-card-aboutUs2 {
     align-content: center;
     background-color: #04AA6D;
     border: 2px solid #73AD21;
@@ -274,7 +274,7 @@ footer {
     width: 800px;
 }
 
-.stat-card4 {
+.stat-card-aboutUs3 {
     align-content: center;
     background-color: #04AA6D;
     border: 2px solid #73AD21;
@@ -325,3 +325,67 @@ footer {
     padding: 10px;
     text-shadow: 2px 2px 4px #000000;
 }
+
+/* Undgå Madsplid */
+
+.tips-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.tips-card {
+    background-color: #04AA6D;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 2px solid #73AD21;
+    padding: 30px;
+    width: 300px;
+    box-shadow: -5px -5px 30px 10px lightblue;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tips-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    margin: 0 auto 15px;
+    padding-top: 10px;
+}
+.tips-card:hover {
+    transform: translateY(-8px);
+    box-shadow: -5px -5px 30px 15px lightblue;
+}
+
+.motto {
+    text-align: center;
+    margin: 60px auto;
+    max-width: 600px;
+}
+
+.motto p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #04AA6D;
+    font-style: italic;
+    line-height: 2;
+
+}
+
+.motto p::before,
+.motto p::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #73AD21;
+    margin: 15px auto;
+    border-radius: 2px;
+}
+
+
+
